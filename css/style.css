@@ -1,0 +1,1002 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+}
+
+.wrap {
+  width: 1025px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-fon img {
+  width: 1025px;
+  height: 760px;
+  animation: fon 0.9s ease forwards 3s;
+  opacity: 1;
+}
+.text {
+  top: 0;
+  position: absolute;
+  font-size: 27px;
+  margin-top: 128px;
+  margin-left: 40px;
+  animation: fon 0.9s ease forwards 3s;
+  opacity: 1;
+}
+.circleUp {
+  left: 395px;
+  top: 415px;
+}
+.circleRight {
+  left: 640px;
+  top: 386px;
+}
+.circle-curved {
+  color: yellow;
+  position: absolute;
+
+  animation: circle-curved 0.7s ease-in-out 3 forwards,
+    hide-slowly 1s linear 2.4s forwards;
+}
+.circl{
+  position: absolute;
+  right: 232px;
+  top: 350px;
+  width: 30px;
+  height: 30px;
+  background-color: #9a9696;
+  border-radius: 50%;
+  animation: circle-speed 0.5s 1 ease-in 1.8s forwards;
+  z-index: 20;
+}
+.main-animate {
+  position: absolute;
+  top: 19%;
+  left: 13%;
+  height: 480px;
+  animation: main-animate 0.7s ease-in-out 3.5s forwards 1;
+  opacity: 0;
+}
+.main-animate > img {
+  width: 750px;
+  height: 480px;
+  border: 5px solid #fff;
+}
+.before-mainImg {
+  position: absolute;
+  left: 5px;
+  bottom: -70px;
+  height: 584px;
+  width: 748px;
+  z-index: 20;
+}
+.preparation-img {
+  position: absolute;
+  top: 26px;
+  left: 254px;
+  z-index: 10;
+}
+.preparation-img img {
+  width: 240px;
+  height: 135px;
+}
+.main-animate::before {
+  content: "Действующее вещество 1";
+  position: absolute;
+  font-size: 30px;
+  width: 207px;
+  left: 17px;
+  top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #f14405;
+  -webkit-text-stroke: 1.2px #fff;
+  z-index: 20;
+}
+.main-animate::after {
+  content: "Действующее вещество 2";
+  position: absolute;
+  font-size: 30px;
+  width: 207px;
+  right: 35px;
+  top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #f14405;
+  -webkit-text-stroke: 1.2px #fff;
+  z-index: 20;
+}
+
+.redical-items {
+  position: absolute;
+  top: 0;
+}
+
+.redical-item {
+  list-style-type: none;
+  position: absolute;
+}
+.redical-item img {
+  width: 60px;
+  height: 90px;
+}
+.redical-list__bottom {
+  margin-top: 400px;
+}
+.redical-list__bottom {
+  animation: disappeared 0.6s 1 ease-in 12s forwards;
+}
+.redical-list__top {
+  animation: disappeared 0.6s 1 ease-in 7.5s forwards;
+}
+/* =============================================== */
+.redical-list__top .redical-item:nth-child(1) {
+  top: 129px;
+  left: 39px;
+}
+.redical-list__top .redical-item:nth-child(2) {
+  top: 53px;
+  left: 93px;
+}
+.redical-list__top .redical-item:nth-child(3) {
+  top: 77px;
+  left: 197px;
+}
+.redical-list__top .redical-item:nth-child(4) {
+  top: 60px;
+  left: 488px;
+}
+.redical-list__top .redical-item:nth-child(5) {
+  top: 60px;
+  left: 628px;
+}
+/* ================================================== */
+
+.redical-list__bottom .redical-item:nth-child(1) {
+  bottom: -83px;
+  left: 94px;
+}
+.redical-list__bottom .redical-item:nth-child(2) {
+  bottom: -54px;
+  left: 364px;
+}
+.redical-list__bottom .redical-item:nth-child(3) {
+  bottom: -81px;
+  left: 460px;
+}
+.redical-list__bottom .redical-item:nth-child(4) {
+  bottom: -36px;
+  left: 617px;
+}
+.redical-list__bottom .redical-item:nth-child(5) {
+  bottom: -28px;
+  left: 680px;
+}
+/* ========================================================== */
+
+.shutterstock-right {
+  position: absolute;
+  bottom: 21px;
+  right: 126px;
+  z-index: 20;
+}
+.shutterstock-left {
+  position: absolute;
+  bottom: 12px;
+  left: 250px;
+  z-index: 20;
+}
+.pill-wrap {
+  z-index: -1;
+  top: 0;
+}
+.pill-yellow {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+}
+.pill-red {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.pill-item {
+  position: absolute;
+}
+.pill-yellow .pill-item:nth-child(1) {
+  left: 31px;
+  top: -4px;
+
+  animation: pillY-1-left 1s 1 ease-in 5s forwards,
+    pillY-1-grup1 2.5s 1 linear 7.5s forwards,
+    disappeared 0.7s 1 linear 11s forwards;
+}
+.pill-yellow .pill-item:nth-child(2) {
+  left: 25px;
+  top: 17px;
+  opacity: 1;
+
+  animation: pillY-2-left 1.5s 1 ease 5s forwards,
+    pillY-2-grup1 2.5s 1 linear 7.5s forwards,
+    disappeared 0.7s 1 linear 11s forwards;
+}
+.pill-yellow .pill-item:nth-child(3) {
+  left: 23px;
+  top: 37px;
+  opacity: 1;
+
+  animation: pillY-3-left 1.5s 1 ease 5s forwards,
+    pillY-3-grup1 2.5s 1 linear 7.5s forwards,
+    disappeared 0.7s 1 linear 11s forwards;
+}
+.pill-yellow .pill-item:nth-child(4) {
+  left: 25px;
+  top: 56px;
+  opacity: 1;
+
+  animation: pillY-4-left 1.2s 1 ease-in 5s forwards,
+    pillY-4-grup1 2.5s 1 linear 7.5s forwards,
+    disappeared 0.7s 1 linear 11.4s forwards;
+}
+.pill-yellow .pill-item:nth-child(5) {
+  left: 27px;
+  top: 75px;
+  opacity: 1;
+
+  animation: pillY-5-left 2s 1 ease-in-out 5s forwards,
+    pillY-5-grup1 2.5s 1 linear 7.5s forwards,
+    disappeared 0.7s 1 linear 11.4s forwards;
+}
+.pill-yellow .pill-item:nth-child(6) {
+  left: 6px;
+  top: 2px;
+  opacity: 1;
+
+  animation: pillY-6-left 1.7s 1 ease-out 5s forwards,
+    pillY-6-grup1 2.5s 1 linear 7.5s forwards,
+    disappeared 0.7s 1 linear 11.4s forwards;
+}
+.pill-yellow .pill-item:nth-child(7) {
+  left: 5px;
+  top: 23px;
+  opacity: 1;
+
+  animation: pillY-7-left 1.5s 1 ease-in 5s forwards,
+    pillY-7-grup2 2.5s 1 linear 7.8s forwards,
+    disappeared 0.7s 1 linear 11.4s forwards;
+}
+.pill-yellow .pill-item:nth-child(8) {
+  left: 3px;
+  top: 44px;
+  opacity: 1;
+
+  animation: pillY-8-left 2s 1 ease-out 5s forwards,
+    pillY-8-grup2 2.5s 1 linear 7.8s forwards,
+    disappeared 0.7s 1 linear 11.6s forwards;
+}
+.pill-yellow .pill-item:nth-child(9) {
+  left: 8px;
+  top: 64px;
+  opacity: 1;
+
+  animation: pillY-9-left 1.3s 1 ease-in 5s forwards,
+    pillY-9-grup2 2.5s 1 linear 7.8s forwards,
+    disappeared 0.7s 1 linear 11.6s forwards;
+}
+.pill-yellow .pill-item:nth-child(10) {
+  left: 3px;
+  top: 87px;
+  opacity: 1;
+
+  animation: pillY-10-left 1s 1 ease-in 5s forwards,
+    pillY-10-grup2 2.5s 1 linear 7.8s forwards,
+    disappeared 0.7s 1 linear 11.6s forwards;
+}
+.pill-yellow .pill-item:nth-child(11) {
+  left: -16px;
+  top: 11px;
+  opacity: 1;
+
+  animation: pillY-11-left 1s 1 ease-in 5s forwards,
+    pillY-11-grup3 2.5s 1 linear 8.3s forwards,
+    disappeared 0.7s 1 linear 11.8s forwards;
+}
+.pill-yellow .pill-item:nth-child(12) {
+  left: -12px;
+  top: 32px;
+  opacity: 1;
+
+  animation: pillY-12-left 1s 1 ease-in-out 5s forwards,
+    pillY-12-grup3 2.5s 1 linear 8.3s forwards,
+    disappeared 0.7s 1 linear 11.8s forwards;
+}
+.pill-yellow .pill-item:nth-child(13) {
+  left: -12px;
+  top: 72px;
+  opacity: 1;
+
+  animation: pillY-13-left 1.2s 1 ease-in 5s forwards,
+    pillY-13-grup3 2.5s 1 linear 8.3s forwards,
+    disappeared 0.7s 1 linear 11.8s forwards;
+}
+
+/* =============================================== */
+/* ================================================= */
+.pill-red .pill-item:nth-child(1) {
+  left: -45px;
+  top: -9px;
+
+  animation: pillR-1-right 1.5s 1 ease-in 5s forwards,
+    pillR-1-grup1 2.5s 1 linear 7.5s forwards,
+    disappeared 0.7s 1 linear 11s forwards;
+}
+.pill-red .pill-item:nth-child(2) {
+  left: -25px;
+  top: -3px;
+
+  animation: pillR-2-right 1.1s 1 ease 5s forwards,
+    pillR-2-grup1 2.5s 1 linear 7.5s forwards,
+    disappeared 0.7s 1 linear 11s forwards;
+}
+.pill-red .pill-item:nth-child(3) {
+  left: -25px;
+  top: 14px;
+
+  animation: pillR-3-right 1.4s 1 ease-out 5s forwards,
+    pillR-3-grup1 2.5s 1 linear 7.5s forwards,
+    disappeared 0.7s 1 linear 11s forwards;
+}
+.pill-red .pill-item:nth-child(4) {
+  left: -25px;
+  top: 31px;
+
+  animation: pillR-4-right 1.3s 1 ease-in 5s forwards,
+    pillR-4-grup2 2.5s 1 linear 7.8s forwards,
+    disappeared 0.7s 1 linear 11.4s forwards;
+}
+.pill-red .pill-item:nth-child(5) {
+  left: -30px;
+  top: 49px;
+
+  animation: pillR-5-right 1.1s 1 ease-in-out 5s forwards,
+    pillR-5-grup2 2.5s 1 linear 7.8s forwards,
+    disappeared 0.7s 1 linear 11.4s forwards;
+}
+.pill-red .pill-item:nth-child(6) {
+  left: -28px;
+  top: 70px;
+
+  animation: pillR-6-right 1.5s 1 ease-in 5s forwards,
+    pillR-6-grup2 2.5s 1 linear 7.8s forwards,
+    disappeared 0.7s 1 linear 11.4s forwards;
+}
+.pill-red .pill-item:nth-child(7) {
+  left: -46px;
+  top: 81px;
+
+  animation: pillR-7-right 0.9s 1 ease-in-out 5s forwards,
+    pillR-7-grup2 2.5s 1 linear 7.8s forwards,
+    disappeared 0.7s 1 linear 11.6s forwards;
+}
+.pill-red .pill-item:nth-child(8) {
+  left: -27px;
+  top: 91px;
+
+  animation: pillR-8-right 1.4s 1 ease-in 5s forwards,
+    pillR-8-grup3 2.5s 1 linear 8.3s forwards,
+    disappeared 0.7s 1 linear 11.5s forwards;
+}
+.pill-red .pill-item:nth-child(9) {
+  left: -8px;
+  top: 15px;
+
+  animation: pillR-9-right 1.6s 1 ease 5s forwards,
+    pillR-9-grup3 2.5s 1 linear 8.3s forwards,
+    disappeared 0.7s 1 linear 11.7s forwards;
+}
+.pill-red .pill-item:nth-child(10) {
+  left: -13px;
+  top: 38px;
+
+  animation: pillR-10-right 1.1s 1 ease-in 5s forwards,
+    pillR-10-grup3 2.5s 1 linear 8.3s forwards,
+    disappeared 0.7s 1 linear 11.8s forwards;
+}
+.pill-red .pill-item:nth-child(11) {
+  left: -15px;
+  top: 60px;
+
+  animation: pillR-11-right 1.3s 1 ease-out 5s forwards,
+    pillR-11-grup3 2.5s 1 linear 8.3s forwards,
+    disappeared 0.7s 1 linear 11.8s forwards;
+}
+
+.shutterstock-left::after {
+  content: "";
+  position: absolute;
+  width: 88px;
+  height: 43px;
+  transform: rotate(10deg);
+  border-radius: 50%;
+  left: 1px;
+  bottom: 13px;
+  z-index: -1;
+  box-shadow: 4px 3px 36px 35px rgba(255, 255, 255, 0.94);
+  opacity: 0;
+  animation: shutterstock 1.3s 5 linear 12.3s;
+}
+.shutterstock-right::before {
+  content: "";
+  position: absolute;
+  width: 88px;
+  height: 43px;
+  transform: rotate(157deg);
+  border-radius: 50%;
+  left: 1px;
+  bottom: 12px;
+  z-index: -1;
+  box-shadow: 4px 3px 36px 35px rgba(255, 255, 255, 0.94);
+  opacity: 0;
+  animation: shutterstock 1.3s 5 linear 12.3s;
+}
+@keyframes circle-curved {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes shutterstock {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+}
+
+@keyframes circle-speed {
+  0% {
+    right: 232px;
+  top: 350px;
+  }
+  50% {
+    right: 242px;
+  top: 370px;
+  }
+  100% {
+    right: 282px;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
+@keyframes hide-slowly {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fon {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes main-animate {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* =========================================== */
+/* =============================== pill-yellow-left */
+
+@keyframes pillY-1-left {
+  0% {
+    left: 31px;
+    top: -4px;
+  }
+  100% {
+    left: -30px;
+    top: 120px;
+  }
+}
+@keyframes pillY-2-left {
+  0% {
+    left: 25px;
+    top: 17px;
+  }
+  100% {
+    left: -140px;
+    top: 130px;
+  }
+}
+@keyframes pillY-3-left {
+  0% {
+    left: 23px;
+    top: 37px;
+  }
+  100% {
+    left: -60px;
+    top: 125px;
+  }
+}
+@keyframes pillY-4-left {
+  0% {
+    left: 25px;
+    top: 56px;
+  }
+  100% {
+    left: -120px;
+    top: 140px;
+  }
+}
+@keyframes pillY-5-left {
+  0% {
+    left: 27px;
+    top: 75px;
+  }
+  100% {
+    left: -210px;
+    top: 151px;
+  }
+}
+@keyframes pillY-6-left {
+  0% {
+    left: 5px;
+    top: 23px;
+  }
+  100% {
+    left: -154px;
+    top: 126px;
+  }
+}
+
+@keyframes pillY-7-left {
+  0% {
+    left: 5px;
+    top: 23px;
+  }
+  100% {
+    left: -70px;
+    top: 100px;
+  }
+}
+
+@keyframes pillY-8-left {
+  0% {
+    left: 3px;
+    top: 44px;
+  }
+  100% {
+    left: -90px;
+    top: 125px;
+  }
+}
+@keyframes pillY-9-left {
+  0% {
+    left: 8px;
+    top: 64px;
+  }
+  100% {
+    left: -120px;
+    top: 118px;
+  }
+}
+@keyframes pillY-10-left {
+  0% {
+    left: 31px;
+    top: -4px;
+  }
+  100% {
+    left: 3px;
+    top: 97px;
+  }
+}
+@keyframes pillY-11-left {
+  0% {
+    left: -16px;
+    top: 11px;
+  }
+  100% {
+    left: -40px;
+    top: 104px;
+  }
+}
+@keyframes pillY-12-left {
+  0% {
+    left: -12px;
+    top: 32px;
+  }
+  100% {
+    left: -3px;
+    top: 119px;
+  }
+}
+@keyframes pillY-13-left {
+  0% {
+    left: 31px;
+    top: -4px;
+  }
+  100% {
+    left: -173px;
+    top: 141px;
+  }
+}
+
+/* =============================== pill-yellow-left and*/
+
+/* ============================================== */
+/* ============================== pillY-grup1-down*/
+@keyframes pillY-1-grup1 {
+  0% {
+    left: -30px;
+    top: 120px;
+  }
+  100% {
+    top: 380px;
+  }
+}
+@keyframes pillY-2-grup1 {
+  0% {
+    left: -140px;
+    top: 130px;
+  }
+  100% {
+    top: 390px;
+  }
+}
+@keyframes pillY-3-grup1 {
+  0% {
+    left: -60px;
+    top: 125px;
+  }
+  100% {
+    top: 385px;
+  }
+}
+@keyframes pillY-4-grup1 {
+  0% {
+    left: -120px;
+    top: 140px;
+  }
+  100% {
+    top: 400px;
+  }
+}
+@keyframes pillY-5-grup1 {
+  0% {
+    left: -210px;
+    top: 151px;
+  }
+  100% {
+    top: 410px;
+  }
+}
+
+@keyframes pillY-6-grup1 {
+  0% {
+    left: -154px;
+    top: 126px;
+  }
+  100% {
+    top: 386px;
+  }
+}
+@keyframes pillY-7-grup2 {
+  0% {
+    left: -70px;
+    top: 100px;
+  }
+  100% {
+    top: 360px;
+  }
+}
+
+@keyframes pillY-8-grup2 {
+  0% {
+    left: -90px;
+    top: 125px;
+  }
+  100% {
+    top: 385px;
+  }
+}
+@keyframes pillY-9-grup2 {
+  0% {
+    left: -120px;
+    top: 118px;
+  }
+  100% {
+    top: 378px;
+  }
+}
+@keyframes pillY-10-grup2 {
+  0% {
+    left: 3px;
+    top: 97px;
+  }
+  100% {
+    top: 357px;
+  }
+}
+@keyframes pillY-11-grup3 {
+  0% {
+    left: -40px;
+    top: 104px;
+  }
+  100% {
+    top: 364px;
+  }
+}
+@keyframes pillY-12-grup3 {
+  0% {
+    left: -3px;
+    top: 119px;
+  }
+  100% {
+    top: 379px;
+  }
+}
+@keyframes pillY-13-grup3 {
+  0% {
+    left: -173px;
+    top: 141px;
+  }
+  100% {
+    top: 401px;
+  }
+}
+/* ===================================== pillY-grup and */
+@keyframes disappeared {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* ============================================== */
+/*=======================================pill-red */
+@keyframes pillR-1-right {
+  0% {
+    left: -45px;
+    top: -9px;
+  }
+  100% {
+    left: 152px;
+    top: 76px;
+  }
+}
+@keyframes pillR-2-right {
+  0% {
+    left: -25px;
+    top: -3px;
+  }
+  100% {
+    left: 45px;
+    top: 94px;
+  }
+}
+@keyframes pillR-3-right {
+  0% {
+    left: -25px;
+    top: 14px;
+  }
+  100% {
+    left: 72px;
+    top: 85px;
+  }
+}
+@keyframes pillR-4-right {
+  0% {
+    left: -25px;
+    top: 31px;
+  }
+  100% {
+    left: -7px;
+    top: 84px;
+  }
+}
+@keyframes pillR-5-right {
+  0% {
+    left: -30px;
+    top: 49px;
+  }
+  100% {
+    left: 110px;
+    top: 60px;
+  }
+}
+@keyframes pillR-6-right {
+  0% {
+    left: -28px;
+    top: 70px;
+  }
+  100% {
+    left: 98px;
+    top: 86px;
+  }
+}
+@keyframes pillR-7-right {
+  0% {
+    left: -46px;
+    top: 81px;
+  }
+  100% {
+    left: 24px;
+    top: 81px;
+  }
+}
+@keyframes pillR-8-right {
+  0% {
+    left: -27px;
+    top: 91px;
+  }
+  100% {
+    left: -6px;
+    top: 105px;
+  }
+}
+@keyframes pillR-9-right {
+  0% {
+    left: -8px;
+    top: 15px;
+  }
+  100% {
+    left: 82px;
+    top: 67px;
+  }
+}
+@keyframes pillR-10-right {
+  0% {
+    left: -13px;
+    top: 38px;
+  }
+  100% {
+    left: 120px;
+    top: 80px;
+  }
+}
+@keyframes pillR-11-right {
+  0% {
+    left: -15px;
+    top: 60px;
+  }
+  100% {
+    left: 46px;
+    top: 69px;
+  }
+}
+
+/* ============================================== */
+/*=======================================pill-red and*/
+
+@keyframes pillR-1-grup1 {
+  0% {
+    left: 152px;
+    top: 76px;
+  }
+  100% {
+    top: 336px;
+  }
+}
+@keyframes pillR-2-grup1 {
+  0% {
+    left: 45px;
+    top: 94px;
+  }
+  100% {
+    top: 354px;
+  }
+}
+@keyframes pillR-3-grup1 {
+  0% {
+    left: 72px;
+    top: 85px;
+  }
+  100% {
+    top: 345px;
+  }
+}
+@keyframes pillR-4-grup2 {
+  0% {
+    left: -7px;
+    top: 84px;
+  }
+  100% {
+    top: 344px;
+  }
+}
+@keyframes pillR-5-grup2 {
+  0% {
+    left: 110px;
+    top: 60px;
+  }
+  100% {
+    top: 320px;
+  }
+}
+@keyframes pillR-6-grup2 {
+  0% {
+    left: 98px;
+    top: 86px;
+  }
+  100% {
+    top: 346px;
+  }
+}
+@keyframes pillR-7-grup2 {
+  0% {
+    left: 24px;
+    top: 81px;
+  }
+  100% {
+    top: 341px;
+  }
+}
+@keyframes pillR-8-grup3 {
+  0% {
+    left: -6px;
+    top: 105px;
+  }
+  100% {
+    top: 365px;
+  }
+}
+@keyframes pillR-9-grup3 {
+  0% {
+    left: 82px;
+    top: 67px;
+  }
+  100% {
+    top: 327px;
+  }
+}
+@keyframes pillR-10-grup3 {
+  0% {
+    left: 120px;
+    top: 80px;
+  }
+  100% {
+    top: 340px;
+  }
+}
+@keyframes pillR-11-grup3 {
+  0% {
+    left: 46px;
+    top: 69px;
+  }
+  100% {
+    top: 329px;
+  }
+}
